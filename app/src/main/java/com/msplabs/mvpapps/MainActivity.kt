@@ -1,4 +1,4 @@
-package com.msplabs.myapplication
+package com.msplabs.mvpapps
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

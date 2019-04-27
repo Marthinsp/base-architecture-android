@@ -1,4 +1,4 @@
-package com.msplabs.myapplication
+package com.msplabs.mvpapps
 
 import org.junit.Test
 
