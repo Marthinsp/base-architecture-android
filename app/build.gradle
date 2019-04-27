@@ -22,6 +22,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    buildTypes.each {
+        it.buildConfigField 'String', 'ENDPOINT_URL', Endpoint_URL
+    }
 }
 
 dependencies {
@@ -38,7 +41,7 @@ dependencies {
 
     //Dagger2
     implementation "com.google.dagger:dagger:2.9"
-    kapt "com.google.dagger:dagger-implementationr:2.9"
+    kapt "com.google.dagger:dagger-compiler:2.9"
     compileOnly "org.glassfish:javax.annotation:10.0-b28"
 
     //Squareup
